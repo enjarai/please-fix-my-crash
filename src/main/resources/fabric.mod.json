@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "please-fix-my-crash",
+	"version": "${version}",
+	"name": "Please Fix My Crash",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/please-fix-my-crash/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "dev.enjarai.pleasefixmycrash.PleaseFixMyCrash"
+		],
+		"client": [
+			"dev.enjarai.pleasefixmycrash.PleaseFixMyCrashClient"
+		]
+	},
+	"mixins": [
+		"please-fix-my-crash.mixins.json",
+		{
+			"config": "please-fix-my-crash.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
