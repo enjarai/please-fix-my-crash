@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "dev.enjarai.pleasefixmycrash.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "dev.enjarai.pleasefixmycrash.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ExampleMixin",
+    "UtilMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
